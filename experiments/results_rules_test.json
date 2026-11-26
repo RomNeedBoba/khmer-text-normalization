@@ -1,0 +1,806 @@
+{
+ "rules": {
+  "arabic": {
+   "n": 22613,
+   "exact_match": 0.899969044355017,
+   "cer": 0.018880819486758914,
+   "macro13": {
+    "P": 0.8508343696341089,
+    "R": 0.8537414076023767,
+    "F1": 0.8289879820078183
+   },
+   "macro15": {
+    "P": 0.870723120349561,
+    "R": 0.8729649407231702,
+    "F1": 0.851650488529975
+   },
+   "per_class": {
+    "CARDINAL": {
+     "P": 0.37486308871851043,
+     "R": 1.0,
+     "F1": 0.545309699263095,
+     "support": 1369
+    },
+    "DATE": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1589
+    },
+    "DECIMAL": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1693
+    },
+    "DURATION": {
+     "P": 0.9956896551724138,
+     "R": 0.5980582524271845,
+     "F1": 0.7472705216336434,
+     "support": 1545
+    },
+    "EMAIL": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1507
+    },
+    "FRACTION": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1699
+    },
+    "ID": {
+     "P": 1.0,
+     "R": 0.9958358120166567,
+     "F1": 0.9979135618479881,
+     "support": 1681
+    },
+    "MEASURE": {
+     "P": 0.9984544049459042,
+     "R": 1.0,
+     "F1": 0.9992266047950503,
+     "support": 1938
+    },
+    "MONEY": {
+     "P": 0.6918396564065855,
+     "R": 1.0,
+     "F1": 0.8178548762428602,
+     "support": 1933
+    },
+    "ORDINAL": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 955
+    },
+    "PERCENT": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1005
+    },
+    "RANGE": {
+     "P": 1.0,
+     "R": 0.5005800464037123,
+     "F1": 0.6671820641669889,
+     "support": 1724
+    },
+    "TELEPHONE": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1542
+    },
+    "TIME": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1632
+    },
+    "YEAR": {
+     "P": 0.0,
+     "R": 0.0,
+     "F1": 0.0,
+     "support": 801
+    }
+   },
+   "failed_sentences_by_gold_label": {
+    "RANGE": 861,
+    "MONEY": 735,
+    "PERCENT": 487,
+    "MEASURE": 176,
+    "TELEPHONE": 3
+   },
+   "error_types": {
+    "span+label correct, spoken form differs from gold": 1401,
+    "boundary error": 861
+   },
+   "other_label_fp": {},
+   "error_samples": [
+    {
+     "text": "ប្រវែង 15.19°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ដប់ប្រាំក្បៀសមួយប្រាំបួនអង្សាសេ",
+     "gold": "ប្រវែង ដប់ប្រាំក្បៀសមួយប្រាំបួន°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2369.94m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់បីរយហុកសិបប្រាំបួនក្បៀសប្រាំបួនបួនម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់បីរយហុកសិបប្រាំបួនក្បៀសប្រាំបួនបួនm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 4968.19kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំបីក្បៀសមួយប្រាំបួនគីឡូក្រាម",
+     "gold": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំបីក្បៀសមួយប្រាំបួនkg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 3708.23km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ប្រាំពីររយប្រាំបីក្បៀសពីរបីគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ប្រាំពីររយប្រាំបីក្បៀសពីរបីkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 4966.84km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំមួយក្បៀសប្រាំបីបួនគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំមួយក្បៀសប្រាំបីបួនkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 102.54km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយពីរក្បៀសប្រាំបួនគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង មួយរយពីរក្បៀសប្រាំបួនkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 1670.71km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយពាន់ប្រាំមួយរយចិតសិបក្បៀសប្រាំពីរមួយគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង មួយពាន់ប្រាំមួយរយចិតសិបក្បៀសប្រាំពីរមួយkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 40.25km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង សែសិបក្បៀសពីរប្រាំគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង សែសិបក្បៀសពីរប្រាំkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 3782.74 km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ប្រាំពីររយប៉ែតសិបពីរក្បៀសប្រាំពីរបួនគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ប្រាំពីររយប៉ែតសិបពីរក្បៀសប្រាំពីរបួន km",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 73.41km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ចិតសិបបីក្បៀសបួនមួយគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង ចិតសិបបីក្បៀសបួនមួយkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 3795.91 cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ប្រាំពីររយកៅសិបប្រាំក្បៀសប្រាំបួនមួយសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ប្រាំពីររយកៅសិបប្រាំក្បៀសប្រាំបួនមួយ cm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 972.49m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប្រាំបួនរយចិតសិបពីរក្បៀសបួនប្រាំបួនម៉ែត្រ",
+     "gold": "ប្រវែង ប្រាំបួនរយចិតសិបពីរក្បៀសបួនប្រាំបួនm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 59.77°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ហាសិបប្រាំបួនក្បៀសប្រាំពីរប្រាំពីរអង្សាសេ",
+     "gold": "ប្រវែង ហាសិបប្រាំបួនក្បៀសប្រាំពីរប្រាំពីរ°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 151.49km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយហាសិបមួយក្បៀសបួនប្រាំបួនគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង មួយរយហាសិបមួយក្បៀសបួនប្រាំបួនkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2040.72m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់សែសិបក្បៀសប្រាំពីរពីរម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់សែសិបក្បៀសប្រាំពីរពីរm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 4034.79 kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់សាមសិបបួនក្បៀសប្រាំពីរប្រាំបួនគីឡូក្រាម",
+     "gold": "ប្រវែង បួនពាន់សាមសិបបួនក្បៀសប្រាំពីរប្រាំបួន kg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2583.77 cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំរយប៉ែតសិបបីក្បៀសប្រាំពីរប្រាំពីរសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំរយប៉ែតសិបបីក្បៀសប្រាំពីរប្រាំពីរ cm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 710.13kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប្រាំពីររយដប់ក្បៀសមួយបីគីឡូក្រាម",
+     "gold": "ប្រវែង ប្រាំពីររយដប់ក្បៀសមួយបីkg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2911.36km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំបួនរយដប់មួយក្បៀសបីប្រាំមួយគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំបួនរយដប់មួយក្បៀសបីប្រាំមួយkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 4197.76km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់មួយរយកៅសិបប្រាំពីរក្បៀសប្រាំពីរប្រាំមួយគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បួនពាន់មួយរយកៅសិបប្រាំពីរក្បៀសប្រាំពីរប្រាំមួយkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 194.11°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយកៅសិបបួនក្បៀសមួយមួយអង្សាសេ",
+     "gold": "ប្រវែង មួយរយកៅសិបបួនក្បៀសមួយមួយ°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 1865.73 km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយពាន់ប្រាំបីរយហុកសិបប្រាំក្បៀសប្រាំពីរបីគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង មួយពាន់ប្រាំបីរយហុកសិបប្រាំក្បៀសប្រាំពីរបី km",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 164.01km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយហុកសិបបួនក្បៀសសូន្យមួយគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង មួយរយហុកសិបបួនក្បៀសសូន្យមួយkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2618.04kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំមួយរយដប់ប្រាំបីក្បៀសសូន្យបួនគីឡូក្រាម",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំមួយរយដប់ប្រាំបីក្បៀសសូន្យបួនkg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 133.50 °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយសាមសិបបីក្បៀសប្រាំសូន្យអង្សាសេ",
+     "gold": "ប្រវែង មួយរយសាមសិបបីក្បៀសប្រាំសូន្យ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 194.60 °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយកៅសិបបួនក្បៀសប្រាំមួយសូន្យអង្សាសេ",
+     "gold": "ប្រវែង មួយរយកៅសិបបួនក្បៀសប្រាំមួយសូន្យ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2306.05cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់បីរយប្រាំមួយក្បៀសសូន្យប្រាំសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់បីរយប្រាំមួយក្បៀសសូន្យប្រាំcm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 200.90km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីររយក្បៀសប្រាំបួនសូន្យគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង ពីររយក្បៀសប្រាំបួនសូន្យkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 3222.43m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ពីររយម្ភៃពីរក្បៀសបួនបីម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ពីររយម្ភៃពីរក្បៀសបួនបីm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2658.97 km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំមួយរយហាសិបប្រាំបីក្បៀសប្រាំបួនប្រាំពីរគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំមួយរយហាសិបប្រាំបីក្បៀសប្រាំបួនប្រាំពីរ km",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 82.93 °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប៉ែតសិបពីរក្បៀសប្រាំបួនបីអង្សាសេ",
+     "gold": "ប្រវែង ប៉ែតសិបពីរក្បៀសប្រាំបួនបី °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2779.36 cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំពីររយចិតសិបប្រាំបួនក្បៀសបីប្រាំមួយសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំពីររយចិតសិបប្រាំបួនក្បៀសបីប្រាំមួយ cm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 1741.98m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយពាន់ប្រាំពីររយសែសិបមួយក្បៀសប្រាំបួនប្រាំបីម៉ែត្រ",
+     "gold": "ប្រវែង មួយពាន់ប្រាំពីររយសែសិបមួយក្បៀសប្រាំបួនប្រាំបីm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2281.42m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ពីររយប៉ែតសិបមួយក្បៀសបួនពីរម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ពីររយប៉ែតសិបមួយក្បៀសបួនពីរm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 99.20 °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង កៅសិបប្រាំបួនក្បៀសពីរសូន្យអង្សាសេ",
+     "gold": "ប្រវែង កៅសិបប្រាំបួនក្បៀសពីរសូន្យ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 4551.48km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់ប្រាំរយហាសិបមួយក្បៀសបួនប្រាំបីគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បួនពាន់ប្រាំរយហាសិបមួយក្បៀសបួនប្រាំបីkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 63.92 °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ហុកសិបបីក្បៀសប្រាំបួនពីរអង្សាសេ",
+     "gold": "ប្រវែង ហុកសិបបីក្បៀសប្រាំបួនពីរ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 111.20°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយដប់មួយក្បៀសពីរសូន្យអង្សាសេ",
+     "gold": "ប្រវែង មួយរយដប់មួយក្បៀសពីរសូន្យ°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 987.15m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប្រាំបួនរយប៉ែតសិបប្រាំពីរក្បៀសមួយប្រាំម៉ែត្រ",
+     "gold": "ប្រវែង ប្រាំបួនរយប៉ែតសិបប្រាំពីរក្បៀសមួយប្រាំm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 57.53 °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ហាសិបប្រាំពីរក្បៀសប្រាំបីអង្សាសេ",
+     "gold": "ប្រវែង ហាសិបប្រាំពីរក្បៀសប្រាំបី °C",
+     "type": "span+label correct, spoken form differs from gold"
+    }
+   ]
+  },
+  "khmer_digits": {
+   "n": 22613,
+   "exact_match": 0.899969044355017,
+   "cer": 0.018880819486758914,
+   "macro13": {
+    "P": 0.8508343696341089,
+    "R": 0.8537414076023767,
+    "F1": 0.8289879820078183
+   },
+   "macro15": {
+    "P": 0.870723120349561,
+    "R": 0.8729649407231702,
+    "F1": 0.851650488529975
+   },
+   "per_class": {
+    "CARDINAL": {
+     "P": 0.37486308871851043,
+     "R": 1.0,
+     "F1": 0.545309699263095,
+     "support": 1369
+    },
+    "DATE": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1589
+    },
+    "DECIMAL": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1693
+    },
+    "DURATION": {
+     "P": 0.9956896551724138,
+     "R": 0.5980582524271845,
+     "F1": 0.7472705216336434,
+     "support": 1545
+    },
+    "EMAIL": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1507
+    },
+    "FRACTION": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1699
+    },
+    "ID": {
+     "P": 1.0,
+     "R": 0.9958358120166567,
+     "F1": 0.9979135618479881,
+     "support": 1681
+    },
+    "MEASURE": {
+     "P": 0.9984544049459042,
+     "R": 1.0,
+     "F1": 0.9992266047950503,
+     "support": 1938
+    },
+    "MONEY": {
+     "P": 0.6918396564065855,
+     "R": 1.0,
+     "F1": 0.8178548762428602,
+     "support": 1933
+    },
+    "ORDINAL": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 955
+    },
+    "PERCENT": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1005
+    },
+    "RANGE": {
+     "P": 1.0,
+     "R": 0.5005800464037123,
+     "F1": 0.6671820641669889,
+     "support": 1724
+    },
+    "TELEPHONE": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1542
+    },
+    "TIME": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1632
+    },
+    "YEAR": {
+     "P": 0.0,
+     "R": 0.0,
+     "F1": 0.0,
+     "support": 801
+    }
+   },
+   "failed_sentences_by_gold_label": {
+    "RANGE": 861,
+    "MONEY": 735,
+    "PERCENT": 487,
+    "MEASURE": 176,
+    "TELEPHONE": 3
+   },
+   "error_types": {
+    "span+label correct, spoken form differs from gold": 1401,
+    "boundary error": 861
+   },
+   "other_label_fp": {},
+   "error_samples": [
+    {
+     "text": "ប្រវែង ១៥.១៩°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ដប់ប្រាំក្បៀសមួយប្រាំបួនអង្សាសេ",
+     "gold": "ប្រវែង ដប់ប្រាំក្បៀសមួយប្រាំបួន°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៣៦៩.៩៤m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់បីរយហុកសិបប្រាំបួនក្បៀសប្រាំបួនបួនម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់បីរយហុកសិបប្រាំបួនក្បៀសប្រាំបួនបួនm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៤៩៦៨.១៩kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំបីក្បៀសមួយប្រាំបួនគីឡូក្រាម",
+     "gold": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំបីក្បៀសមួយប្រាំបួនkg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៣៧០៨.២៣km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ប្រាំពីររយប្រាំបីក្បៀសពីរបីគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ប្រាំពីររយប្រាំបីក្បៀសពីរបីkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៤៩៦៦.៨៤km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំមួយក្បៀសប្រាំបីបួនគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំមួយក្បៀសប្រាំបីបួនkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១០២.៥៤km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយពីរក្បៀសប្រាំបួនគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង មួយរយពីរក្បៀសប្រាំបួនkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៦៧០.៧១km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយពាន់ប្រាំមួយរយចិតសិបក្បៀសប្រាំពីរមួយគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង មួយពាន់ប្រាំមួយរយចិតសិបក្បៀសប្រាំពីរមួយkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៤០.២៥km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង សែសិបក្បៀសពីរប្រាំគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង សែសិបក្បៀសពីរប្រាំkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៣៧៨២.៧៤ km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ប្រាំពីររយប៉ែតសិបពីរក្បៀសប្រាំពីរបួនគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ប្រាំពីររយប៉ែតសិបពីរក្បៀសប្រាំពីរបួន km",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៧៣.៤១km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ចិតសិបបីក្បៀសបួនមួយគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង ចិតសិបបីក្បៀសបួនមួយkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៣៧៩៥.៩១ cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ប្រាំពីររយកៅសិបប្រាំក្បៀសប្រាំបួនមួយសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ប្រាំពីររយកៅសិបប្រាំក្បៀសប្រាំបួនមួយ cm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៩៧២.៤៩m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប្រាំបួនរយចិតសិបពីរក្បៀសបួនប្រាំបួនម៉ែត្រ",
+     "gold": "ប្រវែង ប្រាំបួនរយចិតសិបពីរក្បៀសបួនប្រាំបួនm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៥៩.៧៧°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ហាសិបប្រាំបួនក្បៀសប្រាំពីរប្រាំពីរអង្សាសេ",
+     "gold": "ប្រវែង ហាសិបប្រាំបួនក្បៀសប្រាំពីរប្រាំពីរ°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៥១.៤៩km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយហាសិបមួយក្បៀសបួនប្រាំបួនគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង មួយរយហាសិបមួយក្បៀសបួនប្រាំបួនkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២០៤០.៧២m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់សែសិបក្បៀសប្រាំពីរពីរម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់សែសិបក្បៀសប្រាំពីរពីរm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៤០៣៤.៧៩ kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់សាមសិបបួនក្បៀសប្រាំពីរប្រាំបួនគីឡូក្រាម",
+     "gold": "ប្រវែង បួនពាន់សាមសិបបួនក្បៀសប្រាំពីរប្រាំបួន kg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៥៨៣.៧៧ cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំរយប៉ែតសិបបីក្បៀសប្រាំពីរប្រាំពីរសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំរយប៉ែតសិបបីក្បៀសប្រាំពីរប្រាំពីរ cm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៧១០.១៣kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប្រាំពីររយដប់ក្បៀសមួយបីគីឡូក្រាម",
+     "gold": "ប្រវែង ប្រាំពីររយដប់ក្បៀសមួយបីkg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៩១១.៣៦km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំបួនរយដប់មួយក្បៀសបីប្រាំមួយគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំបួនរយដប់មួយក្បៀសបីប្រាំមួយkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៤១៩៧.៧៦km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់មួយរយកៅសិបប្រាំពីរក្បៀសប្រាំពីរប្រាំមួយគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បួនពាន់មួយរយកៅសិបប្រាំពីរក្បៀសប្រាំពីរប្រាំមួយkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៩៤.១១°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយកៅសិបបួនក្បៀសមួយមួយអង្សាសេ",
+     "gold": "ប្រវែង មួយរយកៅសិបបួនក្បៀសមួយមួយ°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៨៦៥.៧៣ km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយពាន់ប្រាំបីរយហុកសិបប្រាំក្បៀសប្រាំពីរបីគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង មួយពាន់ប្រាំបីរយហុកសិបប្រាំក្បៀសប្រាំពីរបី km",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៦៤.០១km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយហុកសិបបួនក្បៀសសូន្យមួយគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង មួយរយហុកសិបបួនក្បៀសសូន្យមួយkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៦១៨.០៤kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំមួយរយដប់ប្រាំបីក្បៀសសូន្យបួនគីឡូក្រាម",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំមួយរយដប់ប្រាំបីក្បៀសសូន្យបួនkg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៣៣.៥០ °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយសាមសិបបីក្បៀសប្រាំសូន្យអង្សាសេ",
+     "gold": "ប្រវែង មួយរយសាមសិបបីក្បៀសប្រាំសូន្យ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៩៤.៦០ °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយកៅសិបបួនក្បៀសប្រាំមួយសូន្យអង្សាសេ",
+     "gold": "ប្រវែង មួយរយកៅសិបបួនក្បៀសប្រាំមួយសូន្យ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៣០៦.០៥cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់បីរយប្រាំមួយក្បៀសសូន្យប្រាំសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់បីរយប្រាំមួយក្បៀសសូន្យប្រាំcm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២០០.៩០km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីររយក្បៀសប្រាំបួនសូន្យគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង ពីររយក្បៀសប្រាំបួនសូន្យkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៣២២២.៤៣m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ពីររយម្ភៃពីរក្បៀសបួនបីម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ពីររយម្ភៃពីរក្បៀសបួនបីm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៦៥៨.៩៧ km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំមួយរយហាសិបប្រាំបីក្បៀសប្រាំបួនប្រាំពីរគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំមួយរយហាសិបប្រាំបីក្បៀសប្រាំបួនប្រាំពីរ km",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៨២.៩៣ °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប៉ែតសិបពីរក្បៀសប្រាំបួនបីអង្សាសេ",
+     "gold": "ប្រវែង ប៉ែតសិបពីរក្បៀសប្រាំបួនបី °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៧៧៩.៣៦ cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំពីររយចិតសិបប្រាំបួនក្បៀសបីប្រាំមួយសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំពីររយចិតសិបប្រាំបួនក្បៀសបីប្រាំមួយ cm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៧៤១.៩៨m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយពាន់ប្រាំពីររយសែសិបមួយក្បៀសប្រាំបួនប្រាំបីម៉ែត្រ",
+     "gold": "ប្រវែង មួយពាន់ប្រាំពីររយសែសិបមួយក្បៀសប្រាំបួនប្រាំបីm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២២៨១.៤២m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ពីររយប៉ែតសិបមួយក្បៀសបួនពីរម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ពីររយប៉ែតសិបមួយក្បៀសបួនពីរm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៩៩.២០ °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង កៅសិបប្រាំបួនក្បៀសពីរសូន្យអង្សាសេ",
+     "gold": "ប្រវែង កៅសិបប្រាំបួនក្បៀសពីរសូន្យ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៤៥៥១.៤៨km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់ប្រាំរយហាសិបមួយក្បៀសបួនប្រាំបីគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បួនពាន់ប្រាំរយហាសិបមួយក្បៀសបួនប្រាំបីkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៦៣.៩២ °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ហុកសិបបីក្បៀសប្រាំបួនពីរអង្សាសេ",
+     "gold": "ប្រវែង ហុកសិបបីក្បៀសប្រាំបួនពីរ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១១១.២០°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយដប់មួយក្បៀសពីរសូន្យអង្សាសេ",
+     "gold": "ប្រវែង មួយរយដប់មួយក្បៀសពីរសូន្យ°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៩៨៧.១៥m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប្រាំបួនរយប៉ែតសិបប្រាំពីរក្បៀសមួយប្រាំម៉ែត្រ",
+     "gold": "ប្រវែង ប្រាំបួនរយប៉ែតសិបប្រាំពីរក្បៀសមួយប្រាំm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៥៧.៥៣ °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ហាសិបប្រាំពីរក្បៀសប្រាំបីអង្សាសេ",
+     "gold": "ប្រវែង ហាសិបប្រាំពីរក្បៀសប្រាំបី °C",
+     "type": "span+label correct, spoken form differs from gold"
+    }
+   ]
+  }
+ }
+}

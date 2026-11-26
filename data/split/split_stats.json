@@ -1,0 +1,11 @@
+{
+  "records": 103000,
+  "unique_sentences": 90304,
+  "templates": 125,
+  "train_sentences": 56661,
+  "val_sentences": 11030,
+  "test_sentences": 22613,
+  "train_templates": 78,
+  "val_templates": 15,
+  "test_templates": 32
+}

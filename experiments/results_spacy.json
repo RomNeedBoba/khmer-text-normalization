@@ -1,0 +1,2563 @@
+{
+ "split_sizes": {
+  "train": 56661,
+  "val": 11030,
+  "test": 22613
+ },
+ "token_alignment_skips": {
+  "train": 1446,
+  "val": 242
+ },
+ "spacy_classifier": {
+  "per_class": {
+   "CARDINAL": {
+    "P": 0.44939965694682676,
+    "R": 0.38276113951789625,
+    "F1": 0.41341222879684414,
+    "support": 1369
+   },
+   "DATE": {
+    "P": 0.7897614314115308,
+    "R": 1.0,
+    "F1": 0.8825326298250485,
+    "support": 1589
+   },
+   "DECIMAL": {
+    "P": 0.6506318793314309,
+    "R": 0.9427052569403426,
+    "F1": 0.7698986975397973,
+    "support": 1693
+   },
+   "DURATION": {
+    "P": 0.7091194968553459,
+    "R": 0.2919093851132686,
+    "F1": 0.41357175607519486,
+    "support": 1545
+   },
+   "EMAIL": {
+    "P": 0.7823315118397086,
+    "R": 0.5700066357000664,
+    "F1": 0.6595009596928982,
+    "support": 1507
+   },
+   "FRACTION": {
+    "P": 0.5498771498771499,
+    "R": 0.6586227192466156,
+    "F1": 0.5993572576325655,
+    "support": 1699
+   },
+   "ID": {
+    "P": 0.18685121107266436,
+    "R": 0.032123735871505056,
+    "F1": 0.05482233502538071,
+    "support": 1681
+   },
+   "MEASURE": {
+    "P": 0.6451776649746193,
+    "R": 0.6558307533539731,
+    "F1": 0.650460593654043,
+    "support": 1938
+   },
+   "MONEY": {
+    "P": 0.42247943953700884,
+    "R": 0.7175375064666322,
+    "F1": 0.5318251533742332,
+    "support": 1933
+   },
+   "ORDINAL": {
+    "P": 0.0,
+    "R": 0.0,
+    "F1": 0.0,
+    "support": 955
+   },
+   "PERCENT": {
+    "P": 0.8927927927927928,
+    "R": 0.9860696517412936,
+    "F1": 0.9371158392434988,
+    "support": 1005
+   },
+   "RANGE": {
+    "P": 0.9117221418234442,
+    "R": 0.7308584686774942,
+    "F1": 0.8113329040566645,
+    "support": 1724
+   },
+   "TELEPHONE": {
+    "P": 0.7712294043092522,
+    "R": 0.7892347600518806,
+    "F1": 0.7801282051282051,
+    "support": 1542
+   },
+   "TIME": {
+    "P": 0.9520613614573347,
+    "R": 0.6084558823529411,
+    "F1": 0.742429906542056,
+    "support": 1632
+   },
+   "YEAR": {
+    "P": 0.6428571428571429,
+    "R": 1.0,
+    "F1": 0.782608695652174,
+    "support": 801
+   }
+  },
+  "macro13": {
+   "P": 0.6451622740133753,
+   "R": 0.674152732574026,
+   "F1": 0.6395902975015635
+  },
+  "macro15": {
+   "P": 0.6237528190057501,
+   "R": 0.6244077263355939,
+   "F1": 0.6019331441492403
+  }
+ },
+ "rules": {
+  "arabic": {
+   "n": 22613,
+   "exact_match": 0.899969044355017,
+   "cer": 0.018880819486758914,
+   "macro13": {
+    "P": 0.8508343696341089,
+    "R": 0.8537414076023767,
+    "F1": 0.8289879820078183
+   },
+   "macro15": {
+    "P": 0.870723120349561,
+    "R": 0.8729649407231702,
+    "F1": 0.851650488529975
+   },
+   "per_class": {
+    "CARDINAL": {
+     "P": 0.37486308871851043,
+     "R": 1.0,
+     "F1": 0.545309699263095,
+     "support": 1369
+    },
+    "DATE": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1589
+    },
+    "DECIMAL": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1693
+    },
+    "DURATION": {
+     "P": 0.9956896551724138,
+     "R": 0.5980582524271845,
+     "F1": 0.7472705216336434,
+     "support": 1545
+    },
+    "EMAIL": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1507
+    },
+    "FRACTION": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1699
+    },
+    "ID": {
+     "P": 1.0,
+     "R": 0.9958358120166567,
+     "F1": 0.9979135618479881,
+     "support": 1681
+    },
+    "MEASURE": {
+     "P": 0.9984544049459042,
+     "R": 1.0,
+     "F1": 0.9992266047950503,
+     "support": 1938
+    },
+    "MONEY": {
+     "P": 0.6918396564065855,
+     "R": 1.0,
+     "F1": 0.8178548762428602,
+     "support": 1933
+    },
+    "ORDINAL": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 955
+    },
+    "PERCENT": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1005
+    },
+    "RANGE": {
+     "P": 1.0,
+     "R": 0.5005800464037123,
+     "F1": 0.6671820641669889,
+     "support": 1724
+    },
+    "TELEPHONE": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1542
+    },
+    "TIME": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1632
+    },
+    "YEAR": {
+     "P": 0.0,
+     "R": 0.0,
+     "F1": 0.0,
+     "support": 801
+    }
+   },
+   "failed_sentences_by_gold_label": {
+    "RANGE": 861,
+    "MONEY": 735,
+    "PERCENT": 487,
+    "MEASURE": 176,
+    "TELEPHONE": 3
+   },
+   "error_types": {
+    "span+label correct, spoken form differs from gold": 1401,
+    "boundary error": 861
+   },
+   "other_label_fp": {},
+   "error_samples": [
+    {
+     "text": "ប្រវែង 15.19°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ដប់ប្រាំក្បៀសមួយប្រាំបួនអង្សាសេ",
+     "gold": "ប្រវែង ដប់ប្រាំក្បៀសមួយប្រាំបួន°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2369.94m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់បីរយហុកសិបប្រាំបួនក្បៀសប្រាំបួនបួនម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់បីរយហុកសិបប្រាំបួនក្បៀសប្រាំបួនបួនm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 4968.19kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំបីក្បៀសមួយប្រាំបួនគីឡូក្រាម",
+     "gold": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំបីក្បៀសមួយប្រាំបួនkg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 3708.23km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ប្រាំពីររយប្រាំបីក្បៀសពីរបីគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ប្រាំពីររយប្រាំបីក្បៀសពីរបីkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 4966.84km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំមួយក្បៀសប្រាំបីបួនគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំមួយក្បៀសប្រាំបីបួនkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 102.54km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយពីរក្បៀសប្រាំបួនគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង មួយរយពីរក្បៀសប្រាំបួនkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 1670.71km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយពាន់ប្រាំមួយរយចិតសិបក្បៀសប្រាំពីរមួយគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង មួយពាន់ប្រាំមួយរយចិតសិបក្បៀសប្រាំពីរមួយkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 40.25km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង សែសិបក្បៀសពីរប្រាំគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង សែសិបក្បៀសពីរប្រាំkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 3782.74 km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ប្រាំពីររយប៉ែតសិបពីរក្បៀសប្រាំពីរបួនគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ប្រាំពីររយប៉ែតសិបពីរក្បៀសប្រាំពីរបួន km",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 73.41km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ចិតសិបបីក្បៀសបួនមួយគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង ចិតសិបបីក្បៀសបួនមួយkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 3795.91 cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ប្រាំពីររយកៅសិបប្រាំក្បៀសប្រាំបួនមួយសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ប្រាំពីររយកៅសិបប្រាំក្បៀសប្រាំបួនមួយ cm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 972.49m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប្រាំបួនរយចិតសិបពីរក្បៀសបួនប្រាំបួនម៉ែត្រ",
+     "gold": "ប្រវែង ប្រាំបួនរយចិតសិបពីរក្បៀសបួនប្រាំបួនm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 59.77°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ហាសិបប្រាំបួនក្បៀសប្រាំពីរប្រាំពីរអង្សាសេ",
+     "gold": "ប្រវែង ហាសិបប្រាំបួនក្បៀសប្រាំពីរប្រាំពីរ°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 151.49km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយហាសិបមួយក្បៀសបួនប្រាំបួនគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង មួយរយហាសិបមួយក្បៀសបួនប្រាំបួនkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2040.72m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់សែសិបក្បៀសប្រាំពីរពីរម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់សែសិបក្បៀសប្រាំពីរពីរm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 4034.79 kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់សាមសិបបួនក្បៀសប្រាំពីរប្រាំបួនគីឡូក្រាម",
+     "gold": "ប្រវែង បួនពាន់សាមសិបបួនក្បៀសប្រាំពីរប្រាំបួន kg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2583.77 cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំរយប៉ែតសិបបីក្បៀសប្រាំពីរប្រាំពីរសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំរយប៉ែតសិបបីក្បៀសប្រាំពីរប្រាំពីរ cm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 710.13kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប្រាំពីររយដប់ក្បៀសមួយបីគីឡូក្រាម",
+     "gold": "ប្រវែង ប្រាំពីររយដប់ក្បៀសមួយបីkg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2911.36km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំបួនរយដប់មួយក្បៀសបីប្រាំមួយគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំបួនរយដប់មួយក្បៀសបីប្រាំមួយkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 4197.76km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់មួយរយកៅសិបប្រាំពីរក្បៀសប្រាំពីរប្រាំមួយគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បួនពាន់មួយរយកៅសិបប្រាំពីរក្បៀសប្រាំពីរប្រាំមួយkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 194.11°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយកៅសិបបួនក្បៀសមួយមួយអង្សាសេ",
+     "gold": "ប្រវែង មួយរយកៅសិបបួនក្បៀសមួយមួយ°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 1865.73 km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយពាន់ប្រាំបីរយហុកសិបប្រាំក្បៀសប្រាំពីរបីគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង មួយពាន់ប្រាំបីរយហុកសិបប្រាំក្បៀសប្រាំពីរបី km",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 164.01km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយហុកសិបបួនក្បៀសសូន្យមួយគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង មួយរយហុកសិបបួនក្បៀសសូន្យមួយkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2618.04kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំមួយរយដប់ប្រាំបីក្បៀសសូន្យបួនគីឡូក្រាម",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំមួយរយដប់ប្រាំបីក្បៀសសូន្យបួនkg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 133.50 °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយសាមសិបបីក្បៀសប្រាំសូន្យអង្សាសេ",
+     "gold": "ប្រវែង មួយរយសាមសិបបីក្បៀសប្រាំសូន្យ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 194.60 °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយកៅសិបបួនក្បៀសប្រាំមួយសូន្យអង្សាសេ",
+     "gold": "ប្រវែង មួយរយកៅសិបបួនក្បៀសប្រាំមួយសូន្យ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2306.05cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់បីរយប្រាំមួយក្បៀសសូន្យប្រាំសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់បីរយប្រាំមួយក្បៀសសូន្យប្រាំcm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 200.90km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីររយក្បៀសប្រាំបួនសូន្យគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង ពីររយក្បៀសប្រាំបួនសូន្យkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 3222.43m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ពីររយម្ភៃពីរក្បៀសបួនបីម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ពីររយម្ភៃពីរក្បៀសបួនបីm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2658.97 km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំមួយរយហាសិបប្រាំបីក្បៀសប្រាំបួនប្រាំពីរគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំមួយរយហាសិបប្រាំបីក្បៀសប្រាំបួនប្រាំពីរ km",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 82.93 °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប៉ែតសិបពីរក្បៀសប្រាំបួនបីអង្សាសេ",
+     "gold": "ប្រវែង ប៉ែតសិបពីរក្បៀសប្រាំបួនបី °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2779.36 cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំពីររយចិតសិបប្រាំបួនក្បៀសបីប្រាំមួយសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំពីររយចិតសិបប្រាំបួនក្បៀសបីប្រាំមួយ cm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 1741.98m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយពាន់ប្រាំពីររយសែសិបមួយក្បៀសប្រាំបួនប្រាំបីម៉ែត្រ",
+     "gold": "ប្រវែង មួយពាន់ប្រាំពីររយសែសិបមួយក្បៀសប្រាំបួនប្រាំបីm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 2281.42m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ពីររយប៉ែតសិបមួយក្បៀសបួនពីរម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ពីររយប៉ែតសិបមួយក្បៀសបួនពីរm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 99.20 °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង កៅសិបប្រាំបួនក្បៀសពីរសូន្យអង្សាសេ",
+     "gold": "ប្រវែង កៅសិបប្រាំបួនក្បៀសពីរសូន្យ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 4551.48km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់ប្រាំរយហាសិបមួយក្បៀសបួនប្រាំបីគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បួនពាន់ប្រាំរយហាសិបមួយក្បៀសបួនប្រាំបីkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 63.92 °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ហុកសិបបីក្បៀសប្រាំបួនពីរអង្សាសេ",
+     "gold": "ប្រវែង ហុកសិបបីក្បៀសប្រាំបួនពីរ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 111.20°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយដប់មួយក្បៀសពីរសូន្យអង្សាសេ",
+     "gold": "ប្រវែង មួយរយដប់មួយក្បៀសពីរសូន្យ°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 987.15m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប្រាំបួនរយប៉ែតសិបប្រាំពីរក្បៀសមួយប្រាំម៉ែត្រ",
+     "gold": "ប្រវែង ប្រាំបួនរយប៉ែតសិបប្រាំពីរក្បៀសមួយប្រាំm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង 57.53 °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ហាសិបប្រាំពីរក្បៀសប្រាំបីអង្សាសេ",
+     "gold": "ប្រវែង ហាសិបប្រាំពីរក្បៀសប្រាំបី °C",
+     "type": "span+label correct, spoken form differs from gold"
+    }
+   ]
+  },
+  "khmer_digits": {
+   "n": 22613,
+   "exact_match": 0.899969044355017,
+   "cer": 0.018880819486758914,
+   "macro13": {
+    "P": 0.8508343696341089,
+    "R": 0.8537414076023767,
+    "F1": 0.8289879820078183
+   },
+   "macro15": {
+    "P": 0.870723120349561,
+    "R": 0.8729649407231702,
+    "F1": 0.851650488529975
+   },
+   "per_class": {
+    "CARDINAL": {
+     "P": 0.37486308871851043,
+     "R": 1.0,
+     "F1": 0.545309699263095,
+     "support": 1369
+    },
+    "DATE": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1589
+    },
+    "DECIMAL": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1693
+    },
+    "DURATION": {
+     "P": 0.9956896551724138,
+     "R": 0.5980582524271845,
+     "F1": 0.7472705216336434,
+     "support": 1545
+    },
+    "EMAIL": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1507
+    },
+    "FRACTION": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1699
+    },
+    "ID": {
+     "P": 1.0,
+     "R": 0.9958358120166567,
+     "F1": 0.9979135618479881,
+     "support": 1681
+    },
+    "MEASURE": {
+     "P": 0.9984544049459042,
+     "R": 1.0,
+     "F1": 0.9992266047950503,
+     "support": 1938
+    },
+    "MONEY": {
+     "P": 0.6918396564065855,
+     "R": 1.0,
+     "F1": 0.8178548762428602,
+     "support": 1933
+    },
+    "ORDINAL": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 955
+    },
+    "PERCENT": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1005
+    },
+    "RANGE": {
+     "P": 1.0,
+     "R": 0.5005800464037123,
+     "F1": 0.6671820641669889,
+     "support": 1724
+    },
+    "TELEPHONE": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1542
+    },
+    "TIME": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1632
+    },
+    "YEAR": {
+     "P": 0.0,
+     "R": 0.0,
+     "F1": 0.0,
+     "support": 801
+    }
+   },
+   "failed_sentences_by_gold_label": {
+    "RANGE": 861,
+    "MONEY": 735,
+    "PERCENT": 487,
+    "MEASURE": 176,
+    "TELEPHONE": 3
+   },
+   "error_types": {
+    "span+label correct, spoken form differs from gold": 1401,
+    "boundary error": 861
+   },
+   "other_label_fp": {},
+   "error_samples": [
+    {
+     "text": "ប្រវែង ១៥.១៩°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ដប់ប្រាំក្បៀសមួយប្រាំបួនអង្សាសេ",
+     "gold": "ប្រវែង ដប់ប្រាំក្បៀសមួយប្រាំបួន°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៣៦៩.៩៤m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់បីរយហុកសិបប្រាំបួនក្បៀសប្រាំបួនបួនម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់បីរយហុកសិបប្រាំបួនក្បៀសប្រាំបួនបួនm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៤៩៦៨.១៩kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំបីក្បៀសមួយប្រាំបួនគីឡូក្រាម",
+     "gold": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំបីក្បៀសមួយប្រាំបួនkg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៣៧០៨.២៣km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ប្រាំពីររយប្រាំបីក្បៀសពីរបីគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ប្រាំពីររយប្រាំបីក្បៀសពីរបីkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៤៩៦៦.៨៤km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំមួយក្បៀសប្រាំបីបួនគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បួនពាន់ប្រាំបួនរយហុកសិបប្រាំមួយក្បៀសប្រាំបីបួនkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១០២.៥៤km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយពីរក្បៀសប្រាំបួនគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង មួយរយពីរក្បៀសប្រាំបួនkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៦៧០.៧១km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយពាន់ប្រាំមួយរយចិតសិបក្បៀសប្រាំពីរមួយគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង មួយពាន់ប្រាំមួយរយចិតសិបក្បៀសប្រាំពីរមួយkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៤០.២៥km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង សែសិបក្បៀសពីរប្រាំគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង សែសិបក្បៀសពីរប្រាំkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៣៧៨២.៧៤ km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ប្រាំពីររយប៉ែតសិបពីរក្បៀសប្រាំពីរបួនគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ប្រាំពីររយប៉ែតសិបពីរក្បៀសប្រាំពីរបួន km",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៧៣.៤១km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ចិតសិបបីក្បៀសបួនមួយគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង ចិតសិបបីក្បៀសបួនមួយkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៣៧៩៥.៩១ cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ប្រាំពីររយកៅសិបប្រាំក្បៀសប្រាំបួនមួយសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ប្រាំពីររយកៅសិបប្រាំក្បៀសប្រាំបួនមួយ cm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៩៧២.៤៩m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប្រាំបួនរយចិតសិបពីរក្បៀសបួនប្រាំបួនម៉ែត្រ",
+     "gold": "ប្រវែង ប្រាំបួនរយចិតសិបពីរក្បៀសបួនប្រាំបួនm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៥៩.៧៧°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ហាសិបប្រាំបួនក្បៀសប្រាំពីរប្រាំពីរអង្សាសេ",
+     "gold": "ប្រវែង ហាសិបប្រាំបួនក្បៀសប្រាំពីរប្រាំពីរ°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៥១.៤៩km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយហាសិបមួយក្បៀសបួនប្រាំបួនគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង មួយរយហាសិបមួយក្បៀសបួនប្រាំបួនkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២០៤០.៧២m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់សែសិបក្បៀសប្រាំពីរពីរម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់សែសិបក្បៀសប្រាំពីរពីរm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៤០៣៤.៧៩ kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់សាមសិបបួនក្បៀសប្រាំពីរប្រាំបួនគីឡូក្រាម",
+     "gold": "ប្រវែង បួនពាន់សាមសិបបួនក្បៀសប្រាំពីរប្រាំបួន kg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៥៨៣.៧៧ cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំរយប៉ែតសិបបីក្បៀសប្រាំពីរប្រាំពីរសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំរយប៉ែតសិបបីក្បៀសប្រាំពីរប្រាំពីរ cm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៧១០.១៣kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប្រាំពីររយដប់ក្បៀសមួយបីគីឡូក្រាម",
+     "gold": "ប្រវែង ប្រាំពីររយដប់ក្បៀសមួយបីkg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៩១១.៣៦km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំបួនរយដប់មួយក្បៀសបីប្រាំមួយគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំបួនរយដប់មួយក្បៀសបីប្រាំមួយkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៤១៩៧.៧៦km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់មួយរយកៅសិបប្រាំពីរក្បៀសប្រាំពីរប្រាំមួយគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បួនពាន់មួយរយកៅសិបប្រាំពីរក្បៀសប្រាំពីរប្រាំមួយkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៩៤.១១°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយកៅសិបបួនក្បៀសមួយមួយអង្សាសេ",
+     "gold": "ប្រវែង មួយរយកៅសិបបួនក្បៀសមួយមួយ°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៨៦៥.៧៣ km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយពាន់ប្រាំបីរយហុកសិបប្រាំក្បៀសប្រាំពីរបីគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង មួយពាន់ប្រាំបីរយហុកសិបប្រាំក្បៀសប្រាំពីរបី km",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៦៤.០១km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយហុកសិបបួនក្បៀសសូន្យមួយគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង មួយរយហុកសិបបួនក្បៀសសូន្យមួយkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៦១៨.០៤kg",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំមួយរយដប់ប្រាំបីក្បៀសសូន្យបួនគីឡូក្រាម",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំមួយរយដប់ប្រាំបីក្បៀសសូន្យបួនkg",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៣៣.៥០ °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយសាមសិបបីក្បៀសប្រាំសូន្យអង្សាសេ",
+     "gold": "ប្រវែង មួយរយសាមសិបបីក្បៀសប្រាំសូន្យ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៩៤.៦០ °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយកៅសិបបួនក្បៀសប្រាំមួយសូន្យអង្សាសេ",
+     "gold": "ប្រវែង មួយរយកៅសិបបួនក្បៀសប្រាំមួយសូន្យ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៣០៦.០៥cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់បីរយប្រាំមួយក្បៀសសូន្យប្រាំសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់បីរយប្រាំមួយក្បៀសសូន្យប្រាំcm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២០០.៩០km/h",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីររយក្បៀសប្រាំបួនសូន្យគីឡូម៉ែត្រក្នុងមួយម៉ោង",
+     "gold": "ប្រវែង ពីររយក្បៀសប្រាំបួនសូន្យkm/h",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៣២២២.៤៣m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បីពាន់ពីររយម្ភៃពីរក្បៀសបួនបីម៉ែត្រ",
+     "gold": "ប្រវែង បីពាន់ពីររយម្ភៃពីរក្បៀសបួនបីm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៦៥៨.៩៧ km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំមួយរយហាសិបប្រាំបីក្បៀសប្រាំបួនប្រាំពីរគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំមួយរយហាសិបប្រាំបីក្បៀសប្រាំបួនប្រាំពីរ km",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៨២.៩៣ °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប៉ែតសិបពីរក្បៀសប្រាំបួនបីអង្សាសេ",
+     "gold": "ប្រវែង ប៉ែតសិបពីរក្បៀសប្រាំបួនបី °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២៧៧៩.៣៦ cm",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ប្រាំពីររយចិតសិបប្រាំបួនក្បៀសបីប្រាំមួយសង់ទីម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ប្រាំពីររយចិតសិបប្រាំបួនក្បៀសបីប្រាំមួយ cm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១៧៤១.៩៨m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយពាន់ប្រាំពីររយសែសិបមួយក្បៀសប្រាំបួនប្រាំបីម៉ែត្រ",
+     "gold": "ប្រវែង មួយពាន់ប្រាំពីររយសែសិបមួយក្បៀសប្រាំបួនប្រាំបីm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ២២៨១.៤២m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ពីរពាន់ពីររយប៉ែតសិបមួយក្បៀសបួនពីរម៉ែត្រ",
+     "gold": "ប្រវែង ពីរពាន់ពីររយប៉ែតសិបមួយក្បៀសបួនពីរm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៩៩.២០ °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង កៅសិបប្រាំបួនក្បៀសពីរសូន្យអង្សាសេ",
+     "gold": "ប្រវែង កៅសិបប្រាំបួនក្បៀសពីរសូន្យ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៤៥៥១.៤៨km",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង បួនពាន់ប្រាំរយហាសិបមួយក្បៀសបួនប្រាំបីគីឡូម៉ែត្រ",
+     "gold": "ប្រវែង បួនពាន់ប្រាំរយហាសិបមួយក្បៀសបួនប្រាំបីkm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៦៣.៩២ °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ហុកសិបបីក្បៀសប្រាំបួនពីរអង្សាសេ",
+     "gold": "ប្រវែង ហុកសិបបីក្បៀសប្រាំបួនពីរ °C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ១១១.២០°C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង មួយរយដប់មួយក្បៀសពីរសូន្យអង្សាសេ",
+     "gold": "ប្រវែង មួយរយដប់មួយក្បៀសពីរសូន្យ°C",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៩៨៧.១៥m",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ប្រាំបួនរយប៉ែតសិបប្រាំពីរក្បៀសមួយប្រាំម៉ែត្រ",
+     "gold": "ប្រវែង ប្រាំបួនរយប៉ែតសិបប្រាំពីរក្បៀសមួយប្រាំm",
+     "type": "span+label correct, spoken form differs from gold"
+    },
+    {
+     "text": "ប្រវែង ៥៧.៥៣ °C",
+     "label": "MEASURE",
+     "hyp": "ប្រវែង ហាសិបប្រាំពីរក្បៀសប្រាំបីអង្សាសេ",
+     "gold": "ប្រវែង ហាសិបប្រាំពីរក្បៀសប្រាំបី °C",
+     "type": "span+label correct, spoken form differs from gold"
+    }
+   ]
+  }
+ },
+ "spacy_only": {
+  "arabic": {
+   "n": 22613,
+   "exact_match": 0.5353557688055544,
+   "cer": 0.29133554065182543,
+   "macro13": {
+    "P": 0.871247208401017,
+    "R": 0.5967754926315327,
+    "F1": 0.6713396448221283
+   },
+   "macro15": {
+    "P": 0.8641005217906853,
+    "R": 0.5573474517187665,
+    "F1": 0.6343127046258594
+   },
+   "per_class": {
+    "CARDINAL": {
+     "P": 0.4649511978704525,
+     "R": 0.38276113951789625,
+     "F1": 0.4198717948717949,
+     "support": 1369
+    },
+    "DATE": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1589
+    },
+    "DECIMAL": {
+     "P": 0.9962546816479401,
+     "R": 0.9427052569403426,
+     "F1": 0.9687405159332321,
+     "support": 1693
+    },
+    "DURATION": {
+     "P": 1.0,
+     "R": 0.13592233009708737,
+     "F1": 0.23931623931623933,
+     "support": 1545
+    },
+    "EMAIL": {
+     "P": 1.0,
+     "R": 0.5700066357000664,
+     "F1": 0.7261200338123415,
+     "support": 1507
+    },
+    "FRACTION": {
+     "P": 1.0,
+     "R": 0.6586227192466156,
+     "F1": 0.794180269694819,
+     "support": 1699
+    },
+    "ID": {
+     "P": 0.6352941176470588,
+     "R": 0.032123735871505056,
+     "F1": 0.061155152887882216,
+     "support": 1681
+    },
+    "MEASURE": {
+     "P": 0.9992150706436421,
+     "R": 0.6568627450980392,
+     "F1": 0.7926525529265256,
+     "support": 1938
+    },
+    "MONEY": {
+     "P": 0.865792759051186,
+     "R": 0.7175375064666322,
+     "F1": 0.7847241867043848,
+     "support": 1933
+    },
+    "ORDINAL": {
+     "P": 1.0,
+     "R": 0.14031413612565444,
+     "F1": 0.2460973370064279,
+     "support": 955
+    },
+    "PERCENT": {
+     "P": 1.0,
+     "R": 0.9860696517412936,
+     "F1": 0.9929859719438878,
+     "support": 1005
+    },
+    "RANGE": {
+     "P": 1.0,
+     "R": 0.7337587006960556,
+     "F1": 0.8464369354299096,
+     "support": 1724
+    },
+    "TELEPHONE": {
+     "P": 1.0,
+     "R": 0.795071335927367,
+     "F1": 0.8858381502890174,
+     "support": 1542
+    },
+    "TIME": {
+     "P": 1.0,
+     "R": 0.6084558823529411,
+     "F1": 0.7565714285714286,
+     "support": 1632
+    },
+    "YEAR": {
+     "P": 0.0,
+     "R": 0.0,
+     "F1": 0.0,
+     "support": 801
+    }
+   },
+   "failed_sentences_by_gold_label": {
+    "ID": 1626,
+    "DURATION": 1293,
+    "MONEY": 1106,
+    "CARDINAL": 845,
+    "ORDINAL": 818,
+    "YEAR": 801,
+    "MEASURE": 782,
+    "EMAIL": 648,
+    "TIME": 639,
+    "FRACTION": 580,
+    "PERCENT": 494,
+    "RANGE": 459,
+    "TELEPHONE": 319,
+    "DECIMAL": 97
+   },
+   "error_types": {
+    "missed span": 8080,
+    "boundary error": 1231,
+    "span+label correct, spoken form differs from gold": 1166,
+    "right extent, wrong category": 30
+   },
+   "other_label_fp": {},
+   "error_samples": [
+    {
+     "text": "ផ្ទះ 1 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 1 ខ្នង",
+     "gold": "ផ្ទះ មួយ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 70 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 70 ខ្នង",
+     "gold": "ផ្ទះ ចិតសិប ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 496939 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 496939 ខ្នង",
+     "gold": "ផ្ទះ បួនសែនប្រាំបួនម៉ឺនប្រាំមួយពាន់ប្រាំបួនរយសាមសិបប្រាំបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 147,457 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 147,457 ខ្នង",
+     "gold": "ផ្ទះ មួយសែនបួនម៉ឺនប្រាំពីរពាន់បួនរយហាសិបប្រាំពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 66 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 66 ខ្នង",
+     "gold": "ផ្ទះ ហុកសិបប្រាំមួយ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 474799 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 474799 ខ្នង",
+     "gold": "ផ្ទះ បួនសែនប្រាំពីរម៉ឺនបួនពាន់ប្រាំពីររយកៅសិបប្រាំបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 999,474 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 999,474 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំបួនសែនប្រាំបួនម៉ឺនប្រាំបួនពាន់បួនរយចិតសិបបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 6 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 6 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំមួយ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 1462 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 1462 ខ្នង",
+     "gold": "ផ្ទះ មួយពាន់បួនរយហុកសិបពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 293805 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 293805 ខ្នង",
+     "gold": "ផ្ទះ ពីរសែនប្រាំបួនម៉ឺនបីពាន់ប្រាំបីរយប្រាំ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 580 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 580 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំរយប៉ែតសិប ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 7,967 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 7,967 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំពីរពាន់ប្រាំបួនរយហុកសិបប្រាំពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 11,823 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 11,823 ខ្នង",
+     "gold": "ផ្ទះ មួយម៉ឺនមួយពាន់ប្រាំបីរយម្ភៃបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 60998 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 60998 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំមួយម៉ឺនប្រាំបួនរយកៅសិបប្រាំបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 59894 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 59894 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំម៉ឺនប្រាំបួនពាន់ប្រាំបីរយកៅសិបបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 7 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 7 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 740 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 740 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំពីររយសែសិប ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 5475710 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 5475710 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំលានបួនសែនប្រាំពីរម៉ឺនប្រាំពាន់ប្រាំពីររយដប់ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 26 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 26 ខ្នង",
+     "gold": "ផ្ទះ ម្ភៃប្រាំមួយ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 96990 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 96990 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំបួនម៉ឺនប្រាំមួយពាន់ប្រាំបួនរយកៅសិប ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 16 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 16 ខ្នង",
+     "gold": "ផ្ទះ ដប់ប្រាំមួយ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 249,375 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 249,375 ខ្នង",
+     "gold": "ផ្ទះ ពីរសែនបួនម៉ឺនប្រាំបួនពាន់បីរយចិតសិបប្រាំ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 3 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 3 ខ្នង",
+     "gold": "ផ្ទះ បី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 993 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 993 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំបួនរយកៅសិបបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 8 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 8 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 1,054,812 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 1,054,812 ខ្នង",
+     "gold": "ផ្ទះ មួយលានប្រាំម៉ឺនបួនពាន់ប្រាំបីរយដប់ពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 19 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 19 ខ្នង",
+     "gold": "ផ្ទះ ដប់ប្រាំបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 4 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 4 ខ្នង",
+     "gold": "ផ្ទះ បួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 599,553 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 599,553 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំសែនប្រាំបួនម៉ឺនប្រាំបួនពាន់ប្រាំរយហាសិបបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 107 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 107 ខ្នង",
+     "gold": "ផ្ទះ មួយរយប្រាំពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 265603 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 265603 ខ្នង",
+     "gold": "ផ្ទះ ពីរសែនប្រាំមួយម៉ឺនប្រាំពាន់ប្រាំមួយរយបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 178 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 178 ខ្នង",
+     "gold": "ផ្ទះ មួយរយចិតសិបប្រាំបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 67477 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 67477 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំមួយម៉ឺនប្រាំពីរពាន់បួនរយចិតសិបប្រាំពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 2,077 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 2,077 ខ្នង",
+     "gold": "ផ្ទះ ពីរពាន់ចិតសិបប្រាំពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 3,803 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 3,803 ខ្នង",
+     "gold": "ផ្ទះ បីពាន់ប្រាំបីរយបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 29 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 29 ខ្នង",
+     "gold": "ផ្ទះ ម្ភៃប្រាំបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 72,916 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 72,916 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំពីរម៉ឺនពីរពាន់ប្រាំបួនរយដប់ប្រាំមួយ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 304 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 304 ខ្នង",
+     "gold": "ផ្ទះ បីរយបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 9585 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 9585 ខ្នង",
+     "gold": "ផ្ទះ ប្រាំបួនពាន់ប្រាំរយប៉ែតសិបប្រាំ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ 2 ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ 2 ខ្នង",
+     "gold": "ផ្ទះ ពីរ ខ្នង",
+     "type": "missed span"
+    }
+   ]
+  },
+  "khmer_digits": {
+   "n": 22613,
+   "exact_match": 0.35797992305311105,
+   "cer": 0.46557927425085033,
+   "macro13": {
+    "P": 0.851615615703211,
+    "R": 0.3880762113882382,
+    "F1": 0.47434466797938374
+   },
+   "macro15": {
+    "P": 0.8203887666789306,
+    "R": 0.37786280396902566,
+    "F1": 0.46526723230230804
+   },
+   "per_class": {
+    "CARDINAL": {
+     "P": 0.46826126954921804,
+     "R": 0.3718042366691015,
+     "F1": 0.4144951140065146,
+     "support": 1369
+    },
+    "DATE": {
+     "P": 1.0,
+     "R": 0.328508495909377,
+     "F1": 0.49455234486025584,
+     "support": 1589
+    },
+    "DECIMAL": {
+     "P": 0.9923344947735192,
+     "R": 0.8411104548139398,
+     "F1": 0.9104859335038363,
+     "support": 1693
+    },
+    "DURATION": {
+     "P": 1.0,
+     "R": 0.10938511326860842,
+     "F1": 0.19719953325554263,
+     "support": 1545
+    },
+    "EMAIL": {
+     "P": 1.0,
+     "R": 0.5700066357000664,
+     "F1": 0.7261200338123415,
+     "support": 1507
+    },
+    "FRACTION": {
+     "P": 1.0,
+     "R": 0.7045320776927605,
+     "F1": 0.8266574585635359,
+     "support": 1699
+    },
+    "ID": {
+     "P": 0.23482849604221637,
+     "R": 0.0529446757882213,
+     "F1": 0.08640776699029126,
+     "support": 1681
+    },
+    "MEASURE": {
+     "P": 1.0,
+     "R": 0.3632610939112487,
+     "F1": 0.5329295987887964,
+     "support": 1938
+    },
+    "MONEY": {
+     "P": 0.6104072398190046,
+     "R": 0.6978789446456286,
+     "F1": 0.6512189234853971,
+     "support": 1933
+    },
+    "ORDINAL": {
+     "P": 1.0,
+     "R": 0.08272251308900523,
+     "F1": 0.1528046421663443,
+     "support": 955
+    },
+    "PERCENT": {
+     "P": 1.0,
+     "R": 0.7154228855721393,
+     "F1": 0.834106728538283,
+     "support": 1005
+    },
+    "RANGE": {
+     "P": 1.0,
+     "R": 0.03248259860788863,
+     "F1": 0.06292134831460673,
+     "support": 1724
+    },
+    "TELEPHONE": {
+     "P": 1.0,
+     "R": 0.2127107652399481,
+     "F1": 0.3508021390374332,
+     "support": 1542
+    },
+    "TIME": {
+     "P": 1.0,
+     "R": 0.585171568627451,
+     "F1": 0.7383069192114419,
+     "support": 1632
+    },
+    "YEAR": {
+     "P": 0.0,
+     "R": 0.0,
+     "F1": 0.0,
+     "support": 801
+    }
+   },
+   "failed_sentences_by_gold_label": {
+    "RANGE": 1668,
+    "ID": 1592,
+    "DURATION": 1347,
+    "MEASURE": 1287,
+    "TELEPHONE": 1214,
+    "MONEY": 1119,
+    "DATE": 1067,
+    "ORDINAL": 871,
+    "CARDINAL": 860,
+    "YEAR": 801,
+    "TIME": 677,
+    "EMAIL": 648,
+    "PERCENT": 596,
+    "FRACTION": 502,
+    "DECIMAL": 269
+   },
+   "error_types": {
+    "missed span": 11457,
+    "boundary error": 1902,
+    "span+label correct, spoken form differs from gold": 909,
+    "right extent, wrong category": 250
+   },
+   "other_label_fp": {},
+   "error_samples": [
+    {
+     "text": "ផ្ទះ ១ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ១ ខ្នង",
+     "gold": "ផ្ទះ មួយ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៧០ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៧០ ខ្នង",
+     "gold": "ផ្ទះ ចិតសិប ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៤៩៦៩៣៩ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៤៩៦៩៣៩ ខ្នង",
+     "gold": "ផ្ទះ បួនសែនប្រាំបួនម៉ឺនប្រាំមួយពាន់ប្រាំបួនរយសាមសិបប្រាំបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ១៤៧,៤៥៧ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ១៤៧,៤៥៧ ខ្នង",
+     "gold": "ផ្ទះ មួយសែនបួនម៉ឺនប្រាំពីរពាន់បួនរយហាសិបប្រាំពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៦៦ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៦៦ ខ្នង",
+     "gold": "ផ្ទះ ហុកសិបប្រាំមួយ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៤៧៤៧៩៩ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៤៧៤៧៩៩ ខ្នង",
+     "gold": "ផ្ទះ បួនសែនប្រាំពីរម៉ឺនបួនពាន់ប្រាំពីររយកៅសិបប្រាំបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៩៩៩,៤៧៤ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៩៩៩,៤៧៤ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំបួនសែនប្រាំបួនម៉ឺនប្រាំបួនពាន់បួនរយចិតសិបបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៦ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៦ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំមួយ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ១៤៦២ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ១៤៦២ ខ្នង",
+     "gold": "ផ្ទះ មួយពាន់បួនរយហុកសិបពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ២៩៣៨០៥ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ២៩៣៨០៥ ខ្នង",
+     "gold": "ផ្ទះ ពីរសែនប្រាំបួនម៉ឺនបីពាន់ប្រាំបីរយប្រាំ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៥៨០ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៥៨០ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំរយប៉ែតសិប ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៧,៩៦៧ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៧,៩៦៧ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំពីរពាន់ប្រាំបួនរយហុកសិបប្រាំពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ១១,៨២៣ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ១១,៨២៣ ខ្នង",
+     "gold": "ផ្ទះ មួយម៉ឺនមួយពាន់ប្រាំបីរយម្ភៃបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៦០៩៩៨ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៦០៩៩៨ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំមួយម៉ឺនប្រាំបួនរយកៅសិបប្រាំបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៥៩៨៩៤ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៥៩៨៩៤ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំម៉ឺនប្រាំបួនពាន់ប្រាំបីរយកៅសិបបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៧ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៧ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៧៤០ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៧៤០ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំពីររយសែសិប ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៥៤៧៥៧១០ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៥៤៧៥៧១០ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំលានបួនសែនប្រាំពីរម៉ឺនប្រាំពាន់ប្រាំពីររយដប់ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ២៦ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ២៦ ខ្នង",
+     "gold": "ផ្ទះ ម្ភៃប្រាំមួយ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៩៦៩៩០ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៩៦៩៩០ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំបួនម៉ឺនប្រាំមួយពាន់ប្រាំបួនរយកៅសិប ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ១៦ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ១៦ ខ្នង",
+     "gold": "ផ្ទះ ដប់ប្រាំមួយ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ២៤៩,៣៧៥ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ២៤៩,៣៧៥ ខ្នង",
+     "gold": "ផ្ទះ ពីរសែនបួនម៉ឺនប្រាំបួនពាន់បីរយចិតសិបប្រាំ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៣ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៣ ខ្នង",
+     "gold": "ផ្ទះ បី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៩៩៣ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៩៩៣ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំបួនរយកៅសិបបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៨ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៨ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ១,០៥៤,៨១២ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ១,០៥៤,៨១២ ខ្នង",
+     "gold": "ផ្ទះ មួយលានប្រាំម៉ឺនបួនពាន់ប្រាំបីរយដប់ពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ១៩ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ១៩ ខ្នង",
+     "gold": "ផ្ទះ ដប់ប្រាំបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៤ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៤ ខ្នង",
+     "gold": "ផ្ទះ បួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៥៩៩,៥៥៣ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៥៩៩,៥៥៣ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំសែនប្រាំបួនម៉ឺនប្រាំបួនពាន់ប្រាំរយហាសិបបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ១០៧ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ១០៧ ខ្នង",
+     "gold": "ផ្ទះ មួយរយប្រាំពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ២៦៥៦០៣ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ២៦៥៦០៣ ខ្នង",
+     "gold": "ផ្ទះ ពីរសែនប្រាំមួយម៉ឺនប្រាំពាន់ប្រាំមួយរយបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ១៧៨ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ១៧៨ ខ្នង",
+     "gold": "ផ្ទះ មួយរយចិតសិបប្រាំបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៦៧៤៧៧ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៦៧៤៧៧ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំមួយម៉ឺនប្រាំពីរពាន់បួនរយចិតសិបប្រាំពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ២,០៧៧ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ២,០៧៧ ខ្នង",
+     "gold": "ផ្ទះ ពីរពាន់ចិតសិបប្រាំពីរ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៣,៨០៣ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៣,៨០៣ ខ្នង",
+     "gold": "ផ្ទះ បីពាន់ប្រាំបីរយបី ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ២៩ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ២៩ ខ្នង",
+     "gold": "ផ្ទះ ម្ភៃប្រាំបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៧២,៩១៦ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៧២,៩១៦ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំពីរម៉ឺនពីរពាន់ប្រាំបួនរយដប់ប្រាំមួយ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៣០៤ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៣០៤ ខ្នង",
+     "gold": "ផ្ទះ បីរយបួន ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ៩៥៨៥ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ៩៥៨៥ ខ្នង",
+     "gold": "ផ្ទះ ប្រាំបួនពាន់ប្រាំរយប៉ែតសិបប្រាំ ខ្នង",
+     "type": "missed span"
+    },
+    {
+     "text": "ផ្ទះ ២ ខ្នង",
+     "label": "CARDINAL",
+     "hyp": "ផ្ទះ ២ ខ្នង",
+     "gold": "ផ្ទះ ពីរ ខ្នង",
+     "type": "missed span"
+    }
+   ]
+  }
+ },
+ "hybrid": {
+  "arabic": {
+   "n": 22613,
+   "exact_match": 0.9050988369521956,
+   "cer": 0.02298254591708209,
+   "macro13": {
+    "P": 0.8670983793934242,
+    "R": 0.858326877475239,
+    "F1": 0.8456786454432237
+   },
+   "macro15": {
+    "P": 0.8835993231045861,
+    "R": 0.8764981872807949,
+    "F1": 0.8652848324108061
+   },
+   "per_class": {
+    "CARDINAL": {
+     "P": 0.38358083496777806,
+     "R": 1.0,
+     "F1": 0.5544754961522883,
+     "support": 1369
+    },
+    "DATE": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1589
+    },
+    "DECIMAL": {
+     "P": 0.9964349376114082,
+     "R": 0.9905493207324276,
+     "F1": 0.9934834123222749,
+     "support": 1693
+    },
+    "DURATION": {
+     "P": 0.9954648526077098,
+     "R": 0.568284789644013,
+     "F1": 0.7235269880510918,
+     "support": 1545
+    },
+    "EMAIL": {
+     "P": 1.0,
+     "R": 0.9993364299933643,
+     "F1": 0.9996681048788583,
+     "support": 1507
+    },
+    "FRACTION": {
+     "P": 1.0,
+     "R": 0.9935256032960565,
+     "F1": 0.9967522881606141,
+     "support": 1699
+    },
+    "ID": {
+     "P": 0.9817109144542773,
+     "R": 0.9898869720404521,
+     "F1": 0.9857819905213271,
+     "support": 1681
+    },
+    "MEASURE": {
+     "P": 0.9979166666666667,
+     "R": 0.7414860681114551,
+     "F1": 0.8507992895204263,
+     "support": 1938
+    },
+    "MONEY": {
+     "P": 0.8988816402609506,
+     "R": 0.9979306777030522,
+     "F1": 0.945820053934788,
+     "support": 1933
+    },
+    "ORDINAL": {
+     "P": 1.0,
+     "R": 0.9968586387434555,
+     "F1": 0.9984268484530676,
+     "support": 955
+    },
+    "PERCENT": {
+     "P": 1.0,
+     "R": 0.9980099502487563,
+     "F1": 0.999003984063745,
+     "support": 1005
+    },
+    "RANGE": {
+     "P": 1.0,
+     "R": 0.8735498839907193,
+     "F1": 0.9325077399380804,
+     "support": 1724
+    },
+    "TELEPHONE": {
+     "P": 1.0,
+     "R": 0.9980544747081712,
+     "F1": 0.9990262901655307,
+     "support": 1542
+    },
+    "TIME": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1632
+    },
+    "YEAR": {
+     "P": 0.0,
+     "R": 0.0,
+     "F1": 0.0,
+     "support": 801
+    }
+   },
+   "failed_sentences_by_gold_label": {
+    "MONEY": 731,
+    "MEASURE": 622,
+    "PERCENT": 485,
+    "RANGE": 218,
+    "DURATION": 46,
+    "DECIMAL": 16,
+    "FRACTION": 11,
+    "ID": 10,
+    "TELEPHONE": 6,
+    "EMAIL": 1
+   },
+   "error_types": {
+    "span+label correct, spoken form differs from gold": 1340,
+    "boundary error": 776,
+    "right extent, wrong category": 30
+   },
+   "other_label_fp": {},
+   "error_samples": [
+    {
+     "text": "សម្ពាធ 807.10",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ ប្រាំបីរយប្រាំពីរ.10",
+     "gold": "សម្ពាធ ប្រាំបីរយប្រាំពីរក្បៀសមួយសូន្យ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ 857.68",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ ប្រាំបីរយហាសិបប្រាំពីរ.68",
+     "gold": "សម្ពាធ ប្រាំបីរយហាសិបប្រាំពីរក្បៀសប្រាំមួយប្រាំបី",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ 517.85",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ ប្រាំរយដប់ប្រាំពីរ.85",
+     "gold": "សម្ពាធ ប្រាំរយដប់ប្រាំពីរក្បៀសប្រាំបីប្រាំ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ 631.00",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ ប្រាំមួយរយសាមសិបមួយ.00",
+     "gold": "សម្ពាធ ប្រាំមួយរយសាមសិបមួយក្បៀសសូន្យសូន្យ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ 168.85",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ មួយរយហុកសិបប្រាំបី.85",
+     "gold": "សម្ពាធ មួយរយហុកសិបប្រាំបីក្បៀសប្រាំបីប្រាំ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ 709.51",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ ប្រាំពីររយប្រាំបួន.51",
+     "gold": "សម្ពាធ ប្រាំពីររយប្រាំបួនក្បៀសប្រាំមួយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ 700.66",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ ប្រាំពីររយ.66",
+     "gold": "សម្ពាធ ប្រាំពីររយក្បៀសប្រាំមួយប្រាំមួយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ 177.35",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ មួយរយចិតសិបប្រាំពីរ.35",
+     "gold": "សម្ពាធ មួយរយចិតសិបប្រាំពីរក្បៀសបីប្រាំ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ 147.16",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ មួយរយសែសិបប្រាំពីរ.16",
+     "gold": "សម្ពាធ មួយរយសែសិបប្រាំពីរក្បៀសមួយប្រាំមួយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ 782.54",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ ប្រាំពីររយប៉ែតសិបពីរ.54",
+     "gold": "សម្ពាធ ប្រាំពីររយប៉ែតសិបពីរក្បៀសប្រាំបួន",
+     "type": "boundary error"
+    },
+    {
+     "text": "មេគុណ 711.63",
+     "label": "DECIMAL",
+     "hyp": "មេគុណ ប្រាំពីររយដប់មួយ.63",
+     "gold": "មេគុណ ប្រាំពីររយដប់មួយក្បៀសប្រាំមួយបី",
+     "type": "boundary error"
+    },
+    {
+     "text": "មេគុណ 720.54",
+     "label": "DECIMAL",
+     "hyp": "មេគុណ ប្រាំពីររយម្ភៃ.54",
+     "gold": "មេគុណ ប្រាំពីររយម្ភៃក្បៀសប្រាំបួន",
+     "type": "boundary error"
+    },
+    {
+     "text": "មេគុណ 759.69",
+     "label": "DECIMAL",
+     "hyp": "មេគុណ ប្រាំពីររយហាសិបប្រាំបួន.69",
+     "gold": "មេគុណ ប្រាំពីររយហាសិបប្រាំបួនក្បៀសប្រាំមួយប្រាំបួន",
+     "type": "boundary error"
+    },
+    {
+     "text": "មេគុណ 135.80",
+     "label": "DECIMAL",
+     "hyp": "មេគុណ មួយរយសាមសិបប្រាំ.80",
+     "gold": "មេគុណ មួយរយសាមសិបប្រាំក្បៀសប្រាំបីសូន្យ",
+     "type": "boundary error"
+    },
+    {
+     "text": "មេគុណ 761.00",
+     "label": "DECIMAL",
+     "hyp": "មេគុណ ប្រាំពីររយហុកសិបមួយ.00",
+     "gold": "មេគុណ ប្រាំពីររយហុកសិបមួយក្បៀសសូន្យសូន្យ",
+     "type": "boundary error"
+    },
+    {
+     "text": "មេគុណ 158.97",
+     "label": "DECIMAL",
+     "hyp": "មេគុណ មួយរយហាសិបប្រាំបី.97",
+     "gold": "មេគុណ មួយរយហាសិបប្រាំបីក្បៀសប្រាំបួនប្រាំពីរ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 92wk ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ប្រាំបួន ពីរ ដាប់ប៊ែលយូ ខេ ហើយ",
+     "gold": "រត់ កៅសិបពីរសប្តាហ៍ ហើយ",
+     "type": "right extent, wrong category"
+    },
+    {
+     "text": "រត់ 21 mo ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ម្ភៃមួយ mo ហើយ",
+     "gold": "រត់ ម្ភៃមួយខែ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 24 hr ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ម្ភៃបួន hr ហើយ",
+     "gold": "រត់ ម្ភៃបួនម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 2yr ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ពីរ វ៉ាយ អា ហើយ",
+     "gold": "រត់ ពីរឆ្នាំ ហើយ",
+     "type": "right extent, wrong category"
+    },
+    {
+     "text": "រត់ 93 h ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ កៅសិបបី h ហើយ",
+     "gold": "រត់ កៅសិបបីម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 55 h ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ហាសិបប្រាំ h ហើយ",
+     "gold": "រត់ ហាសិបប្រាំម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 41 wk ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ សែសិបមួយ wk ហើយ",
+     "gold": "រត់ សែសិបមួយសប្តាហ៍ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 34 wk ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ សាមសិបបួន wk ហើយ",
+     "gold": "រត់ សាមសិបបួនសប្តាហ៍ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 93yr ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ប្រាំបួន បី វ៉ាយ អា ហើយ",
+     "gold": "រត់ កៅសិបបីឆ្នាំ ហើយ",
+     "type": "right extent, wrong category"
+    },
+    {
+     "text": "រត់ 43 h ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ សែសិបបី h ហើយ",
+     "gold": "រត់ សែសិបបីម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 64months ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ហុកសិបបួនmonths ហើយ",
+     "gold": "រត់ ហុកសិបបួនខែ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 77hrs ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ចិតសិបប្រាំពីរhrs ហើយ",
+     "gold": "រត់ ចិតសិបប្រាំពីរម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 68 sec ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ហុកសិបប្រាំបី sec ហើយ",
+     "gold": "រត់ ហុកសិបប្រាំបីវិនាទី ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 77 mo ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ចិតសិបប្រាំពីរ mo ហើយ",
+     "gold": "រត់ ចិតសិបប្រាំពីរខែ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 6h ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ប្រាំមួយh ហើយ",
+     "gold": "រត់ ប្រាំមួយម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 85yr ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ប៉ែតសិបប្រាំyr ហើយ",
+     "gold": "រត់ ប៉ែតសិបប្រាំឆ្នាំ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 50 h ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ហាសិប h ហើយ",
+     "gold": "រត់ ហាសិបម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 35 yrs ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ សាមសិបប្រាំ yrs ហើយ",
+     "gold": "រត់ សាមសិបប្រាំឆ្នាំ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 32 h ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ សាមសិបពីរ h ហើយ",
+     "gold": "រត់ សាមសិបពីរម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 65 hr ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ហុកសិបប្រាំ hr ហើយ",
+     "gold": "រត់ ហុកសិបប្រាំម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 74hrs ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ចិតសិបបួនhrs ហើយ",
+     "gold": "រត់ ចិតសិបបួនម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 79 mo ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ចិតសិបប្រាំបួន mo ហើយ",
+     "gold": "រត់ ចិតសិបប្រាំបួនខែ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 68 mos ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ហុកសិបប្រាំបី mos ហើយ",
+     "gold": "រត់ ហុកសិបប្រាំបីខែ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ 40 mos ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ សែសិប mos ហើយ",
+     "gold": "រត់ សែសិបខែ ហើយ",
+     "type": "boundary error"
+    }
+   ]
+  },
+  "khmer_digits": {
+   "n": 22613,
+   "exact_match": 0.8656967231238668,
+   "cer": 0.03282397821148461,
+   "macro13": {
+    "P": 0.8464711387962205,
+    "R": 0.8179983081669637,
+    "F1": 0.8016084263070101
+   },
+   "macro15": {
+    "P": 0.8570625870248559,
+    "R": 0.8416657373464804,
+    "F1": 0.822467683329907
+   },
+   "per_class": {
+    "CARDINAL": {
+     "P": 0.32587479171625805,
+     "R": 1.0,
+     "F1": 0.49156193895870737,
+     "support": 1369
+    },
+    "DATE": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1589
+    },
+    "DECIMAL": {
+     "P": 0.993491124260355,
+     "R": 0.9917306556408741,
+     "F1": 0.9926101093703813,
+     "support": 1693
+    },
+    "DURATION": {
+     "P": 0.995418098510882,
+     "R": 0.5624595469255663,
+     "F1": 0.7187758478081059,
+     "support": 1545
+    },
+    "EMAIL": {
+     "P": 1.0,
+     "R": 0.9993364299933643,
+     "F1": 0.9996681048788583,
+     "support": 1507
+    },
+    "FRACTION": {
+     "P": 1.0,
+     "R": 0.9617422012948793,
+     "F1": 0.9804980498049805,
+     "support": 1699
+    },
+    "ID": {
+     "P": 0.8518140010219724,
+     "R": 0.9916716240333135,
+     "F1": 0.9164376030786145,
+     "support": 1681
+    },
+    "MEASURE": {
+     "P": 0.9978323699421965,
+     "R": 0.7125902992776058,
+     "F1": 0.831426851294401,
+     "support": 1938
+    },
+    "MONEY": {
+     "P": 0.6915084199211752,
+     "R": 0.9984480082772892,
+     "F1": 0.817104149026249,
+     "support": 1933
+    },
+    "ORDINAL": {
+     "P": 1.0,
+     "R": 0.9947643979057592,
+     "F1": 0.9973753280839895,
+     "support": 955
+    },
+    "PERCENT": {
+     "P": 1.0,
+     "R": 0.9880597014925373,
+     "F1": 0.993993993993994,
+     "support": 1005
+    },
+    "RANGE": {
+     "P": 1.0,
+     "R": 0.4280742459396752,
+     "F1": 0.5995125913891146,
+     "support": 1724
+    },
+    "TELEPHONE": {
+     "P": 1.0,
+     "R": 0.9961089494163424,
+     "F1": 0.9980506822612086,
+     "support": 1542
+    },
+    "TIME": {
+     "P": 1.0,
+     "R": 1.0,
+     "F1": 1.0,
+     "support": 1632
+    },
+    "YEAR": {
+     "P": 0.0,
+     "R": 0.0,
+     "F1": 0.0,
+     "support": 801
+    }
+   },
+   "failed_sentences_by_gold_label": {
+    "RANGE": 986,
+    "MONEY": 735,
+    "MEASURE": 684,
+    "PERCENT": 481,
+    "FRACTION": 65,
+    "DURATION": 55,
+    "DECIMAL": 14,
+    "TELEPHONE": 9,
+    "ID": 7,
+    "EMAIL": 1
+   },
+   "error_types": {
+    "boundary error": 1445,
+    "span+label correct, spoken form differs from gold": 1342,
+    "right extent, wrong category": 250
+   },
+   "other_label_fp": {},
+   "error_samples": [
+    {
+     "text": "សម្ពាធ ២៧៣.៩២៣៨",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ ២៧៣.ប្រាំបួនពាន់ពីររយសាមសិបប្រាំបី",
+     "gold": "សម្ពាធ ពីររយចិតសិបបីក្បៀសប្រាំបួនពីរបីប្រាំបី",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ ៣៦២.២៧",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ បីរយហុកសិបពីរ.២៧",
+     "gold": "សម្ពាធ បីរយហុកសិបពីរក្បៀសពីរប្រាំពីរ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ ៦៩៥.៣៦",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ ប្រាំមួយរយកៅសិបប្រាំ.៣៦",
+     "gold": "សម្ពាធ ប្រាំមួយរយកៅសិបប្រាំក្បៀសបីប្រាំមួយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ ៩១៤.៥៩",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ ប្រាំបួនរយដប់បួន.៥៩",
+     "gold": "សម្ពាធ ប្រាំបួនរយដប់បួនក្បៀសប្រាំប្រាំបួន",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ ៣៧.០១",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ សាមសិបប្រាំពីរ.០១",
+     "gold": "សម្ពាធ សាមសិបប្រាំពីរក្បៀសសូន្យមួយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ ៤០.៨២",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ សែសិប.៨២",
+     "gold": "សម្ពាធ សែសិបក្បៀសប្រាំបីពីរ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ ៤៧.៦៥",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ សែសិបប្រាំពីរ.៦៥",
+     "gold": "សម្ពាធ សែសិបប្រាំពីរក្បៀសប្រាំមួយប្រាំ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ ១១៤.៥៨",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ មួយរយដប់បួន.៥៨",
+     "gold": "សម្ពាធ មួយរយដប់បួនក្បៀសប្រាំប្រាំបី",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ ៣៩៤.៨៨",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ បីរយកៅសិបបួន.៨៨",
+     "gold": "សម្ពាធ បីរយកៅសិបបួនក្បៀសប្រាំបីប្រាំបី",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ ២៧២.៣៦",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ ពីររយចិតសិបពីរ.៣៦",
+     "gold": "សម្ពាធ ពីររយចិតសិបពីរក្បៀសបីប្រាំមួយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "សម្ពាធ ៥៨៣.៥០៨៨",
+     "label": "DECIMAL",
+     "hyp": "សម្ពាធ ៥៨៣.ប្រាំពាន់ប៉ែតសិបប្រាំបី",
+     "gold": "សម្ពាធ ប្រាំរយប៉ែតសិបបីក្បៀសប្រាំសូន្យប្រាំបីប្រាំបី",
+     "type": "boundary error"
+    },
+    {
+     "text": "មេគុណ ៦៧៨.១៨",
+     "label": "DECIMAL",
+     "hyp": "មេគុណ ប្រាំមួយរយចិតសិបប្រាំបី.១៨",
+     "gold": "មេគុណ ប្រាំមួយរយចិតសិបប្រាំបីក្បៀសមួយប្រាំបី",
+     "type": "boundary error"
+    },
+    {
+     "text": "មេគុណ ២០២.៧៩",
+     "label": "DECIMAL",
+     "hyp": "មេគុណ ពីររយពីរ.៧៩",
+     "gold": "មេគុណ ពីររយពីរក្បៀសប្រាំពីរប្រាំបួន",
+     "type": "boundary error"
+    },
+    {
+     "text": "មេគុណ ២៣៥.២៨",
+     "label": "DECIMAL",
+     "hyp": "មេគុណ ពីររយសាមសិបប្រាំ.២៨",
+     "gold": "មេគុណ ពីររយសាមសិបប្រាំក្បៀសពីរប្រាំបី",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ៧០hr ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ប្រាំពីរ សូន្យ អេច អា ហើយ",
+     "gold": "រត់ ចិតសិបម៉ោង ហើយ",
+     "type": "right extent, wrong category"
+    },
+    {
+     "text": "រត់ ៥៣ hours ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ហាសិបបី hours ហើយ",
+     "gold": "រត់ ហាសិបបីម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ៤០ wk ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ សែសិប wk ហើយ",
+     "gold": "រត់ សែសិបសប្តាហ៍ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ២១ mo ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ម្ភៃមួយ mo ហើយ",
+     "gold": "រត់ ម្ភៃមួយខែ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ៤០ minutes ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ សែសិប minutes ហើយ",
+     "gold": "រត់ សែសិបនាទី ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ២៤ hr ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ម្ភៃបួន hr ហើយ",
+     "gold": "រត់ ម្ភៃបួនម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ៧០yrs ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ប្រាំពីរ សូន្យ វ៉ាយ អា អេស ហើយ",
+     "gold": "រត់ ចិតសិបឆ្នាំ ហើយ",
+     "type": "right extent, wrong category"
+    },
+    {
+     "text": "រត់ ៩៣ h ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ កៅសិបបី h ហើយ",
+     "gold": "រត់ កៅសិបបីម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ៩០ hr ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ កៅសិប hr ហើយ",
+     "gold": "រត់ កៅសិបម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ៥៥ h ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ហាសិបប្រាំ h ហើយ",
+     "gold": "រត់ ហាសិបប្រាំម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ៤៩mo ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ បួន ប្រាំបួន អឹម អូ ហើយ",
+     "gold": "រត់ សែសិបប្រាំបួនខែ ហើយ",
+     "type": "right extent, wrong category"
+    },
+    {
+     "text": "រត់ ៤៣ h ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ សែសិបបី h ហើយ",
+     "gold": "រត់ សែសិបបីម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ២១mos ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ពីរ មួយ អឹម អូ អេស ហើយ",
+     "gold": "រត់ ម្ភៃមួយខែ ហើយ",
+     "type": "right extent, wrong category"
+    },
+    {
+     "text": "រត់ ៧៧ mo ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ចិតសិបប្រាំពីរ mo ហើយ",
+     "gold": "រត់ ចិតសិបប្រាំពីរខែ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ៩២ mos ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ កៅសិបពីរ mos ហើយ",
+     "gold": "រត់ កៅសិបពីរខែ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ៤minute ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ បួន អឹម អាយ អែន យូ ធី អ៊ី ហើយ",
+     "gold": "រត់ បួននាទី ហើយ",
+     "type": "right extent, wrong category"
+    },
+    {
+     "text": "រត់ ៥០ h ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ហាសិប h ហើយ",
+     "gold": "រត់ ហាសិបម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ៥២ min ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ហាសិបពីរ min ហើយ",
+     "gold": "រត់ ហាសិបពីរនាទី ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ១៣ min ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ដប់បី min ហើយ",
+     "gold": "រត់ ដប់បីនាទី ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ២១ wk ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ម្ភៃមួយ wk ហើយ",
+     "gold": "រត់ ម្ភៃមួយសប្តាហ៍ ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ២០wk ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ពីរ សូន្យ ដាប់ប៊ែលយូ ខេ ហើយ",
+     "gold": "រត់ ម្ភៃសប្តាហ៍ ហើយ",
+     "type": "right extent, wrong category"
+    },
+    {
+     "text": "រត់ ៣២ h ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ សាមសិបពីរ h ហើយ",
+     "gold": "រត់ សាមសិបពីរម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ៨១h ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ប្រាំបី មួយ អេច ហើយ",
+     "gold": "រត់ ប៉ែតសិបមួយម៉ោង ហើយ",
+     "type": "right extent, wrong category"
+    },
+    {
+     "text": "រត់ ៦៥ hr ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ហុកសិបប្រាំ hr ហើយ",
+     "gold": "រត់ ហុកសិបប្រាំម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ៧៣ hr ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ចិតសិបបី hr ហើយ",
+     "gold": "រត់ ចិតសិបបីម៉ោង ហើយ",
+     "type": "boundary error"
+    },
+    {
+     "text": "រត់ ៧៩ mo ហើយ",
+     "label": "DURATION",
+     "hyp": "រត់ ចិតសិបប្រាំបួន mo ហើយ",
+     "gold": "រត់ ចិតសិបប្រាំបួនខែ ហើយ",
+     "type": "boundary error"
+    }
+   ]
+  }
+ },
+ "minutes": 4.677377557754516
+}

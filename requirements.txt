@@ -1,0 +1,2 @@
+# Needed for the hybrid normalizer and the experiments (the rules need nothing).
+spacy==3.8.14

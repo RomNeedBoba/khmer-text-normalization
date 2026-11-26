@@ -1,0 +1,53 @@
+{
+  "unique_sentences": 90304,
+  "flagged": 4897,
+  "flagged_percent": 5.42,
+  "flagged_by_label": {
+    "MONEY": 2283,
+    "PERCENT": 1795,
+    "MEASURE": 818,
+    "TELEPHONE": 1
+  },
+  "flagged_by_reason": {
+    "latin_letter": 2516,
+    "percent_symbol": 1795,
+    "currency_symbol": 585,
+    "degree_symbol": 142,
+    "digit": 1
+  },
+  "decimal_values_by_label": {
+    "MEASURE": {
+      "flagged": 818,
+      "total": 818
+    },
+    "MONEY": {
+      "flagged": 2283,
+      "total": 2919
+    },
+    "PERCENT": {
+      "flagged": 1795,
+      "total": 1795
+    },
+    "TELEPHONE": {
+      "flagged": 0,
+      "total": 0
+    }
+  },
+  "sentences_by_label": {
+    "CARDINAL": 5370,
+    "DATE": 7943,
+    "DECIMAL": 6984,
+    "DURATION": 6085,
+    "EMAIL": 5273,
+    "FRACTION": 6825,
+    "ID": 6000,
+    "MEASURE": 7899,
+    "MONEY": 7998,
+    "ORDINAL": 3390,
+    "PERCENT": 3631,
+    "RANGE": 6995,
+    "TELEPHONE": 6000,
+    "TIME": 6610,
+    "YEAR": 3301
+  }
+}
