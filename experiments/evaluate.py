@@ -1,4 +1,4 @@
-"""End-to-end and span-level evaluation for Khmer TN systems.
+"""Evaluation: span scores and end-to-end accuracy.
 
 Systems:
   rules        - the khmer_tn rule-based normalizer alone (no classifier)
@@ -6,7 +6,7 @@ Systems:
   hybrid       - spaCy spans + regex fallback (khmer_tn.hybrid.HybridNormalizer)
 (the spacy/hybrid systems need spaCy installed and --model)
 
-Metrics (Section 4.2 of the paper):
+Metrics:
   span P/R/F1  strict: predicted (start, end, label) must equal gold exactly;
                reported per class and macro-averaged over the 13 benchmark
                classes (EMAIL, ID excluded) and over all 15.

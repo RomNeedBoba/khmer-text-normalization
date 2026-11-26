@@ -1,10 +1,10 @@
 """Snap a (possibly misaligned) labeled span to the category's regex match.
 
 Used in two places:
-  * offline — repairing NER training data whose spans don't line up with
+  * offline - repairing NER training data whose spans don't line up with
     what the rule-based patterns expect (annotator included/excluded a
     currency symbol, a ថ្ងៃទី prefix, a trailing word, ...)
-  * runtime — aligning a model-predicted span before verbalizing it with
+  * runtime - aligning a model-predicted span before verbalizing it with
     the category's expand(), so a slightly-off prediction still works
 
 Strategy: search a padded window around the span with every pattern of

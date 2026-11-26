@@ -1,10 +1,10 @@
-"""Experiment B, second run: spaCy with the paper's offset-preserving regex tokenizer.
+"""Same as run_spacy_experiments.py but with our own regex tokenizer.
 
-Same as run_spacy_experiments.py, except that spaCy's own tokenizer is
-bypassed (as described in the paper and in the internship report): tokens are
-maximal runs of Khmer letters, of digits (Arabic or Khmer), of Latin letters,
-or single other visible characters. Training uses these tokens directly
-(gold_preproc), and the same tokenizer is installed at inference.
+spaCy's tokenizer keeps things like "ជើងទី48" as one token, which breaks some
+spans. Here a token is a run of Khmer letters, a run of digits (Arabic or
+Khmer), a run of Latin letters, or any other single character. Training uses
+these tokens directly (gold_preproc) and the same tokenizer is used at
+inference.
 
 Writes results_spacy_regex.json next to this file.
 """

@@ -1,14 +1,11 @@
-"""Audit the gold spoken forms for written-form characters left unspoken.
+"""Check the "normalized" field of the dataset for things that are not spoken yet.
 
-A gold spoken form should contain only Khmer words. This script flags every
-unique sentence whose gold form still contains a digit (Arabic or Khmer), a
-currency, percent or degree symbol, or a Latin letter (Section 3.3 of the
-paper). EMAIL is excluded.
+The normalized text should be Khmer words only. This flags every sentence
+where it still has a digit, a currency / percent / degree sign or a Latin
+letter in it. EMAIL is skipped. Duplicate sentences are counted once, same as
+in make_split.py.
 
-Input : dataset.jsonl (one record per entity: label, span, sentence, start,
-        end, normalized). Records are deduplicated by sentence, as in
-        make_split.py.
-Output: <outdir>/gold_audit_flagged.jsonl  one flagged sentence per line
+Output: <outdir>/gold_audit_flagged.jsonl  the flagged sentences
         <outdir>/gold_audit_summary.json   counts per label and per reason
 
 Usage: python experiments/audit_gold.py data/dataset.jsonl data/audit

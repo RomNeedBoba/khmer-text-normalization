@@ -1,19 +1,14 @@
-"""One-command spaCy experiments (Experiment B, spaCy tokenizer).
+"""Train and evaluate the spaCy NER model (spaCy's default tokenizer).
 
-What it does (no input needed, about 30-60 min on a normal laptop CPU):
-  1. builds spaCy training files from data/split/train.jsonl and val.jsonl
-     (template-stratified split, made by make_split.py with seed 42)
-  2. retrains the spaCy NER with configs/config.cfg, choosing the
-     best checkpoint on the VALIDATION set (the test set is never used for this)
-  3. evaluates on data/split/test.jsonl:
-       - spaCy classifier spans (strict per-class P/R/F1)       -> Table 5
-       - rules only / spaCy only (no fallback) / hybrid          -> Table 6
-         (exact match, CER, Arabic digits and Khmer digits)
-       - error breakdown of the hybrid                          -> Sec. 5.4
-  4. writes everything to experiments/results_spacy.json
+Steps:
+  1. make train.spacy / val.spacy from data/split
+  2. train with configs/config.cfg, best checkpoint picked on val
+     (skipped if spacy_run/model/model-best is already there)
+  3. evaluate on data/split/test.jsonl: raw NER spans, rules only,
+     model only (no fallback) and hybrid, with Arabic and Khmer digits
+  4. save everything to results_spacy.json
 
-Training is skipped when experiments/spacy_run/model/model-best already exists
-(the trained model is shipped with the repository); delete that folder to retrain.
+Training takes 30-60 min on a laptop CPU, evaluation only about 5 min.
 
 Run:  python experiments/run_spacy_experiments.py
 """

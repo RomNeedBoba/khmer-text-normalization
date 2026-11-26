@@ -1,14 +1,14 @@
-"""Stage 4 — SEGMENT
+"""Stage 4 - SEGMENT
 
 Word segmentation for the acoustic-model input. Runs LAST, after
 verbalization, because verbalization changes the text.
 
 Backends (auto-detected, best available wins):
-  * "khmercut"  — CRF segmenter (pip install khmercut), best quality
-  * "regex"     — script-run splitter: separates Khmer runs from
+  * "khmercut"  - CRF segmenter (pip install khmercut), best quality
+  * "regex"     - script-run splitter: separates Khmer runs from
                   Latin/digit runs and punctuation. No word boundaries
                   inside a Khmer run, but guarantees clean token edges.
-  * "none"      — pass-through
+  * "none"      - pass-through
 
 Force a backend with Segmenter(backend="regex").
 """

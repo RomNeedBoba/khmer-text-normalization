@@ -20,7 +20,7 @@ from .categories import (
     RepeatNormalizer, AbbreviationNormalizer
 )
 
-# most specific first — earlier categories win overlapping spans
+# most specific first - earlier categories win overlapping spans
 DEFAULT_CATEGORIES = [
     EmailNormalizer,       # a@b.c must beat ID / CARDINAL
     TelephoneNormalizer,   # long digit runs, beats CARDINAL / RANGE

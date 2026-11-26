@@ -1,4 +1,4 @@
-"""REPEAT — the Khmer repetition sign ៗ (U+17D7).
+"""REPEAT - the Khmer repetition sign ៗ (U+17D7).
 
 ផ្សេងៗ must be spoken as ផ្សេង ផ្សេង. The sign repeats the PRECEDING word,
 so this stage needs word boundaries:
@@ -12,7 +12,7 @@ so this stage needs word boundaries:
     reconstruct one real syllable; two chunks also happen to cover most
     genuine two-syllable words. Verified against single-syllable words
     (ថ្មី), two-syllable words (ចម្រុះ), and words whose last syllable ends
-    in a bare consonant (ផ្សេង). Still a heuristic, not a real segmenter —
+    in a bare consonant (ផ្សេង). Still a heuristic, not a real segmenter -
     an unusual 3+ syllable word right before ៗ can still be under-captured.
 
 Runs as a full-text pass after verbalization, before PAUSE/SEGMENT.

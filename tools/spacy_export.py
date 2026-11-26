@@ -10,7 +10,7 @@ Input : JSONL, one entity per line:
 Output: JSONL, one example per line:
         {"text": "...", "entities": [[start, end, "CATEGORY"], ...]}
         Records that share the exact same "sentence" text are merged into
-        one example with multiple entities — repair_ner_data.py's overlap
+        one example with multiple entities - repair_ner_data.py's overlap
         check only looks within a single example's entity list, so entities
         belonging to the same sentence need to already be grouped together
         before it runs.

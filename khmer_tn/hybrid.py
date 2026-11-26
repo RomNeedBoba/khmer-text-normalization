@@ -8,7 +8,7 @@ the existing rule-based regexes decide the SPOKEN FORM.
 Every model prediction is snapped to its category's regex match
 (khmer_tn.align.snap_span), so slightly-off boundaries still verbalize.
 Predictions that can't be aligned to any rule of their category are
-skipped — and, with rule_fallback=True (default), the plain rule-based
+skipped - and, with rule_fallback=True (default), the plain rule-based
 tagger then fills in anything the model missed entirely. That makes the
 hybrid strictly safer than the model alone: the rules are the floor.
 """

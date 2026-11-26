@@ -9,7 +9,7 @@ Each spaCy-predicted (start, end, label) is matched back to the SAME regex
 that would have produced it, re-run against the full original `text` (not
 the sliced substring) so lookbehind/lookahead assertions still see the real
 surrounding characters. The regex's own groups are then used for expansion,
-exactly as in the priority-based tag()/verbalize() flow — the only thing
+exactly as in the priority-based tag()/verbalize() flow - the only thing
 that changed is who decides the label.
 
 Anything spaCy doesn't tag (bare numbers, mostly) still needs to be spoken
@@ -59,7 +59,7 @@ def normalize_with_ner(text: str, entities) -> str:
     Returns the fully-verbalized text."""
     out, last = [], 0
     for start, end, label in sorted(entities):
-        if start < last:          # overlapping predictions — skip, keep first
+        if start < last:          # overlapping predictions - skip, keep first
             continue
         result = verbalize_span(text, start, end, label)
         if result is None:

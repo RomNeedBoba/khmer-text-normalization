@@ -1,4 +1,4 @@
-"""Stage 1 — CLEAN
+"""Stage 1 - CLEAN
 
 Character-level cleanup that must run before tagging, so the category
 regexes see well-formed input.
